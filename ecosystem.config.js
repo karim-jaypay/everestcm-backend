@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
       {
-        name: 'app',
+        name: 'everest-backend',
         script: 'npm',
         args: 'run develop -- -p 1338',
       },
