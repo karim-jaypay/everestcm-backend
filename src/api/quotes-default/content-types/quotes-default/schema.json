@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quotes_defaults",
+  "info": {
+    "singularName": "quotes-default",
+    "pluralName": "quotes-defaults",
+    "displayName": "QuotesDefault"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bid": {
+      "type": "float"
+    },
+    "ask": {
+      "type": "float"
+    }
+  }
+}
