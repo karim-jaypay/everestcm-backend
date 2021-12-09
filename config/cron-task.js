@@ -6,7 +6,8 @@ module.exports = {
     // everyday at 12:00 am: 0 0 * * *   every 3 seconds: */3 * * * * *
     
     // update values of important quotes everyday at midnight
-    '0 0 * * *': async ({ strapi }) => {
+    '0 0 * * *': {
+        task: async ({ strapi }) => {
 
         // default quotes
         const titles = [
@@ -71,6 +72,10 @@ module.exports = {
             }
         }
     },
+    options: {
+        tz: 'Europe/Nicosia'
+    }
+},
 
     // get everestcm trade cards and forex, metal categories live data
     '*/3 * * * * *': async ({ strapi }) => {
