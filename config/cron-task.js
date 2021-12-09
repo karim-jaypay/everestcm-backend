@@ -265,9 +265,7 @@ module.exports = {
                         ask: ask,
                         oldbid: oldbid,
                         oldask: oldask,
-                        pips: (title === 'XAGUSD') 
-                        ? (ask - bid) * 100
-                        : (ask - bid) * 10
+                        pips: (ask - bid) * 100
                         }
                     }).catch((err) => console.log(err))
 
@@ -280,9 +278,7 @@ module.exports = {
                         ask: ask,
                         oldbid: oldbid,
                         oldask: oldask,
-                        pips: (title === 'XAGUSD') 
-                        ? (ask - bid) * 100
-                        : (ask - bid) * 10
+                        pips: (ask - bid) * 100
                         }
                     }).catch((err) => console.log(err))
                 }
