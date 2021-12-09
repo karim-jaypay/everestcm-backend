@@ -72,16 +72,36 @@ module.exports = {
         }
     },
 
-    // get everestcm trade cards live data
+    // get everestcm trade cards and forex, metal categories live data
     '*/3 * * * * *': async ({ strapi }) => {
 
-        // default quotes
-        const titles = ['EURUSD', 'USDJPY', 'GBPUSD', 'XAUUSD']
-    
-        // for every quote title run api
+        // default forex quotes
+        const forex_titles = [
+            'EURUSD', 
+            'USDJPY', 
+            'GBPUSD', 
+            'USDCAD',
+            'USDCHF',
+            'USDCNH',
+            'USDRUB',
+            'AUDUSD',
+            'NZDUSD',
+            'USDSEK'
+        ]
+        // default metal quotes
+        const metal_titles = [
+            'XAUUSD',
+            'XAGUSD',
+            'XPTUSD',
+            'XPDUSD'
+        ]
+        // default trade cards quotes
+        const trade_titles = ['EURUSD', 'USDJPY', 'GBPUSD', 'XAUUSD']
+
+        // for every trade card quote title run api
         for( let i = 0; i < titles.length; i++) {
 
-            const title = titles[i]
+            const title = trade_titles[i]
             // get quote of each title
             const { data } = await axios.get(`http://summit-lb-tf-1076725243.eu-west-1.elb.amazonaws.com/quotes/${title}/`)
             .catch((err) => console.log(err))
@@ -133,32 +153,8 @@ module.exports = {
                 }
             }
         }
-    },
-
-    // get everestcm forex category live data
-    '*/3 * * * * *': async ({ strapi }) => {
-
-        // default forex quotes
-        const forex_titles = [
-            'EURUSD', 
-            'USDJPY', 
-            'GBPUSD', 
-            'USDCAD',
-            'USDCHF',
-            'USDCNH',
-            'USDRUB',
-            'AUDUSD',
-            'NZDUSD',
-            'USDSEK'
-        ]
-        const metal_titles = [
-            'XAUUSD',
-            'XAGUSD',
-            'XPTUSD',
-            'XPDUSD'
-        ]
     
-        // for every quote title run api
+        // for every forex quote title run api
         for( let i = 0; i < forex_titles.length; i++) {
 
             const title = forex_titles[i]
