@@ -73,7 +73,7 @@ module.exports = {
         }
     },
     options: {
-        tz: 'Europe/Nicosia'
+        tz: 'Asia/Beirut'
     }
 },
 
