@@ -108,6 +108,9 @@ module.exports = {
            
             if(data) {
 
+                const bid = data[title].bid
+                const ask = data[title].ask
+
                 // find and get old bid and old ask of any quote from quotes-defaults database
                 const old = await strapi.entityService.findMany('api::quotes-default.quotes-default',{
                     filters: {
@@ -132,10 +135,11 @@ module.exports = {
                     await strapi.entityService.create('api::trade-card.trade-card',{
                         data: {
                         title: title,
-                        bid: data[title].bid,
-                        ask: data[title].ask,
+                        bid: bid,
+                        ask: ask,
                         oldbid: oldbid,
-                        oldask: oldask
+                        oldask: oldask,
+                        pips: (title === 'EURUSD' || title === 'GBPUSD') ? (ask - bid) * 10000 : (ask - bid) * 100 
                         }
                     }).catch((err) => console.log(err))
 
@@ -144,10 +148,11 @@ module.exports = {
                     // update the existing row with new details
                     await strapi.entityService.update('api::trade-card.trade-card',result[0].id,{
                         data: {
-                        bid: (title === 'EURUSD' || title === 'GBPUSD') ? data[title].bid.toFixed(5) : data[title].bid,
-                        ask: (title === 'EURUSD' || title === 'GBPUSD') ? data[title].ask.toFixed(5) : data[title].ask,
+                        bid: (title === 'EURUSD' || title === 'GBPUSD') ? bid.toFixed(5) : bid,
+                        ask: (title === 'EURUSD' || title === 'GBPUSD') ? ask.toFixed(5) : ask,
                         oldbid: oldbid,
-                        oldask: oldask
+                        oldask: oldask,
+                        pips: (title === 'EURUSD' || title === 'GBPUSD') ? (ask - bid) * 10000 : (ask - bid) * 100
                         }
                     }).catch((err) => console.log(err))
                 }
@@ -163,6 +168,9 @@ module.exports = {
             .catch((err) => console.log(err))
            
             if(data) {
+
+                const bid = data[title].bid
+                const ask = data[title].ask
 
                 // find and get old bid and old ask of any quote from quotes-defaults database
                 const old = await strapi.entityService.findMany('api::quotes-default.quotes-default',{
@@ -188,10 +196,13 @@ module.exports = {
                     await strapi.entityService.create('api::forex.forex',{
                         data: {
                         title: title,
-                        bid: data[title].bid,
-                        ask: data[title].ask,
+                        bid: bid,
+                        ask: ask,
                         oldbid: oldbid,
-                        oldask: oldask
+                        oldask: oldask,
+                        pips: (title === 'USDJPY') 
+                        ? (ask - bid) * 100
+                        : (ask - bid) * 10000
                         }
                     }).catch((err) => console.log(err))
 
@@ -200,10 +211,13 @@ module.exports = {
                     // update the existing row with new details
                     await strapi.entityService.update('api::forex.forex',result[0].id,{
                         data: {
-                        bid: (title === 'EURUSD' || title === 'GBPUSD') ? data[title].bid.toFixed(5) : data[title].bid,
-                        ask: (title === 'EURUSD' || title === 'GBPUSD') ? data[title].ask.toFixed(5) : data[title].ask,
+                        bid: (title === 'EURUSD' || title === 'GBPUSD') ? bid.toFixed(5) : bid,
+                        ask: (title === 'EURUSD' || title === 'GBPUSD') ? ask.toFixed(5) : ask,
                         oldbid: oldbid,
-                        oldask: oldask
+                        oldask: oldask,
+                        pips: (title === 'USDJPY') 
+                        ? (ask - bid) * 100
+                        : (ask - bid) * 10000
                         }
                     }).catch((err) => console.log(err))
                 }
@@ -219,6 +233,9 @@ module.exports = {
             .catch((err) => console.log(err))
            
             if(data) {
+
+                const bid = data[title].bid
+                const ask = data[title].ask
 
                 // find and get old bid and old ask of any quote from quotes-defaults database
                 const old = await strapi.entityService.findMany('api::quotes-default.quotes-default',{
@@ -244,10 +261,13 @@ module.exports = {
                     await strapi.entityService.create('api::metal.metal',{
                         data: {
                         title: title,
-                        bid: data[title].bid,
-                        ask: data[title].ask,
+                        bid: bid,
+                        ask: ask,
                         oldbid: oldbid,
-                        oldask: oldask
+                        oldask: oldask,
+                        pips: (title === 'XAGUSD') 
+                        ? (ask - bid) * 100
+                        : (ask - bid) * 10
                         }
                     }).catch((err) => console.log(err))
 
@@ -256,10 +276,13 @@ module.exports = {
                     // update the existing row with new details
                     await strapi.entityService.update('api::metal.metal',result[0].id,{
                         data: {
-                        bid: data[title].bid,
-                        ask: data[title].ask,
+                        bid: bid,
+                        ask: ask,
                         oldbid: oldbid,
-                        oldask: oldask
+                        oldask: oldask,
+                        pips: (title === 'XAGUSD') 
+                        ? (ask - bid) * 100
+                        : (ask - bid) * 10
                         }
                     }).catch((err) => console.log(err))
                 }
