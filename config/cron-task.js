@@ -138,8 +138,8 @@ module.exports = {
     // get everestcm forex category live data
     '*/3 * * * * *': async ({ strapi }) => {
 
-        // default quotes
-        const titles = [
+        // default forex quotes
+        const forex_titles = [
             'EURUSD', 
             'USDJPY', 
             'GBPUSD', 
@@ -151,11 +151,17 @@ module.exports = {
             'NZDUSD',
             'USDSEK'
         ]
+        const metal_titles = [
+            'XAUUSD',
+            'XAGUSD',
+            'XPTUSD',
+            'XPDUSD'
+        ]
     
         // for every quote title run api
-        for( let i = 0; i < titles.length; i++) {
+        for( let i = 0; i < forex_titles.length; i++) {
 
-            const title = titles[i]
+            const title = forex_titles[i]
             // get quote of each title
             const { data } = await axios.get(`http://summit-lb-tf-1076725243.eu-west-1.elb.amazonaws.com/quotes/${title}/`)
             .catch((err) => console.log(err))
@@ -207,23 +213,11 @@ module.exports = {
                 }
             }
         }
-    },
 
-    // get everestcm metals category live data
-    '*/3 * * * * *': async ({ strapi }) => {
+        // for every metal quote title run api
+        for( let i = 0; i < metal_titles.length; i++) {
 
-        // default quotes
-        const titles = [
-            'XAUUSD',
-            'XAGUSD',
-            'XPTUSD',
-            'XPDUSD'
-        ]
-    
-        // for every quote title run api
-        for( let i = 0; i < titles.length; i++) {
-
-            const title = titles[i]
+            const title = metal_titles[i]
             // get quote of each title
             const { data } = await axios.get(`http://summit-lb-tf-1076725243.eu-west-1.elb.amazonaws.com/quotes/${title}/`)
             .catch((err) => console.log(err))
@@ -276,6 +270,5 @@ module.exports = {
             }
         }
     },
-
 };
    
