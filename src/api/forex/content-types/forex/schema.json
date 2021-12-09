@@ -4,7 +4,8 @@
   "info": {
     "singularName": "forex",
     "pluralName": "forexes",
-    "displayName": "Forex"
+    "displayName": "Forex",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,6 +25,9 @@
       "type": "float"
     },
     "oldask": {
+      "type": "float"
+    },
+    "pips": {
       "type": "float"
     }
   }

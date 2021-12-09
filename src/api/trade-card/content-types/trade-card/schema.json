@@ -26,6 +26,9 @@
     },
     "oldask": {
       "type": "float"
+    },
+    "pips": {
+      "type": "float"
     }
   }
 }
