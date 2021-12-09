@@ -99,7 +99,7 @@ module.exports = {
         const trade_titles = ['EURUSD', 'USDJPY', 'GBPUSD', 'XAUUSD']
 
         // for every trade card quote title run api
-        for( let i = 0; i < titles.length; i++) {
+        for( let i = 0; i < trade_titles.length; i++) {
 
             const title = trade_titles[i]
             // get quote of each title
