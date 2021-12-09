@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metals",
+  "info": {
+    "singularName": "metal",
+    "pluralName": "metals",
+    "displayName": "Metal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bid": {
+      "type": "float"
+    },
+    "ask": {
+      "type": "float"
+    },
+    "oldbid": {
+      "type": "float"
+    },
+    "oldask": {
+      "type": "float"
+    }
+  }
+}

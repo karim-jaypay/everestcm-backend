@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forexes",
+  "info": {
+    "singularName": "forex",
+    "pluralName": "forexes",
+    "displayName": "Forex"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bid": {
+      "type": "float"
+    },
+    "ask": {
+      "type": "float"
+    },
+    "oldbid": {
+      "type": "float"
+    },
+    "oldask": {
+      "type": "float"
+    }
+  }
+}
