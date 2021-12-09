@@ -139,7 +139,12 @@ module.exports = {
                         ask: ask,
                         oldbid: oldbid,
                         oldask: oldask,
-                        pips: (title === 'EURUSD' || title === 'GBPUSD') ? (ask - bid) * 10000 : (ask - bid) * 100 
+                        pips: (title === 'EURUSD' || title === 'GBPUSD') 
+                        ? (ask - bid) * 10000 
+                        : title === 'USDJPY'
+                        ? (ask - bid) * 100 
+                        :
+                        (ask - bid)
                         }
                     }).catch((err) => console.log(err))
 
@@ -152,7 +157,12 @@ module.exports = {
                         ask: (title === 'EURUSD' || title === 'GBPUSD') ? ask.toFixed(5) : ask,
                         oldbid: oldbid,
                         oldask: oldask,
-                        pips: (title === 'EURUSD' || title === 'GBPUSD') ? (ask - bid) * 10000 : (ask - bid) * 100
+                        pips: (title === 'EURUSD' || title === 'GBPUSD') 
+                        ? (ask - bid) * 10000 
+                        : title === 'USDJPY'
+                        ? (ask - bid) * 100 
+                        :
+                        (ask - bid)
                         }
                     }).catch((err) => console.log(err))
                 }
@@ -265,7 +275,9 @@ module.exports = {
                         ask: ask,
                         oldbid: oldbid,
                         oldask: oldask,
-                        pips: (ask - bid) * 100
+                        pips: (title === 'XAGUSD') 
+                        ? (ask - bid) * 100
+                        : (ask - bid)
                         }
                     }).catch((err) => console.log(err))
 
@@ -278,7 +290,9 @@ module.exports = {
                         ask: ask,
                         oldbid: oldbid,
                         oldask: oldask,
-                        pips: (ask - bid) * 100
+                        pips: (title === 'XAGUSD') 
+                        ? (ask - bid) * 100
+                        : (ask - bid)
                         }
                     }).catch((err) => console.log(err))
                 }
