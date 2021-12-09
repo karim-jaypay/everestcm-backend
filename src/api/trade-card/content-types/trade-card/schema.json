@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trade_cards",
+  "info": {
+    "singularName": "trade-card",
+    "pluralName": "trade-cards",
+    "displayName": "TradeCard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bid": {
+      "type": "float"
+    },
+    "ask": {
+      "type": "float"
+    },
+    "oldbid": {
+      "type": "float"
+    },
+    "oldask": {
+      "type": "float"
+    }
+  }
+}

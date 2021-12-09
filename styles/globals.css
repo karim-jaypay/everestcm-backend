@@ -1,0 +1,101 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header ul {
+  list-style: none !important;
+}
+header ul, li {
+  padding: 0;
+  margin: 0;
+}
+header li::marker {
+  content: none;
+}
+header a, header a:hover {
+  text-decoration: none;
+  color: inherit
+}
+
+/* values */
+:root {
+  --main-color: #23A5D6;
+}
+
+.main_color {
+  color: var(--main-color)
+}
+.main_gradient {
+  background: linear-gradient(#23A5D6, #60BB7D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main_gradient_two {
+  background: linear-gradient(to left,#23A5D6, #60BB7D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* Home Slider */
+.slick-dots {
+  bottom: 40px !important
+}
+.slick-dots li button:before {
+  font-size: 14px;
+  color: lightgrey
+}
+.slick-dots li.slick-active button:before {
+  color: var(--main-color)
+}
+.slick-dots li.slick-active button:before {
+  color: var(--main-color)
+}
+
+#custom_number > .react-tel-input > .flag-dropdown {
+  border: 0;
+  /*border-bottom: 1px solid lightgrey !important;*/
+  background: none;
+}
+
+
+#custom_number > .react-tel-input > .form-control {
+  border: 0;
+  border-bottom: 1px solid lightgrey !important;
+  padding: 0;
+  width: 250px;
+  text-align: center;
+  border-radius: 0px;
+  margin-left: 70px;
+}
+
+#custom_number > .react-tel-input > .form-control:focus {
+  box-shadow: none !important;
+}
+
+.selected-flag > .flag {
+  zoom: 1.5
+}
+
+@media screen and (max-width: 600px) {
+
+  .selected-flag > .flag {
+  zoom: 2.0
+  }
+
+}
