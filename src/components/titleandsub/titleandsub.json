@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_titleandsub_titleandsubs",
+  "info": {
+    "displayName": "titleandsub",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}

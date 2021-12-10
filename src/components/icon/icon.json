@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_icon_icons",
+  "info": {
+    "displayName": "icon",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

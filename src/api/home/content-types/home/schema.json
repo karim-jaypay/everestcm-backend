@@ -1,0 +1,119 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HomeSlider": {
+      "displayName": "HomeSlider",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-slider.home-slider"
+    },
+    "second": {
+      "displayName": "titleandsub",
+      "type": "component",
+      "repeatable": false,
+      "component": "titleandsub.titleandsub"
+    },
+    "third": {
+      "type": "component",
+      "repeatable": false,
+      "component": "titleandsub.titleandsub"
+    },
+    "third_card": {
+      "displayName": "card",
+      "type": "component",
+      "repeatable": true,
+      "component": "card.card"
+    },
+    "fourth": {
+      "type": "component",
+      "repeatable": false,
+      "component": "titleandsub.titleandsub"
+    },
+    "fourth_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "fourth_card": {
+      "displayName": "card_plus",
+      "type": "component",
+      "repeatable": true,
+      "component": "card-plus.card-plus"
+    },
+    "fifth": {
+      "type": "component",
+      "repeatable": false,
+      "component": "titleandsub.titleandsub"
+    },
+    "fifth_title": {
+      "type": "text"
+    },
+    "fifth_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "sixth": {
+      "type": "component",
+      "repeatable": false,
+      "component": "titleandsub.titleandsub"
+    },
+    "sixth_card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.card"
+    },
+    "seventh": {
+      "type": "component",
+      "repeatable": false,
+      "component": "titleandsub.titleandsub"
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "seventh_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "pay_icon": {
+      "displayName": "icon",
+      "type": "component",
+      "repeatable": true,
+      "component": "icon.icon"
+    }
+  }
+}

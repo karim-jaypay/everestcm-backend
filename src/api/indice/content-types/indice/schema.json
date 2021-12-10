@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "indices",
+  "info": {
+    "singularName": "indice",
+    "pluralName": "indices",
+    "displayName": "Indices"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bid": {
+      "type": "float"
+    },
+    "ask": {
+      "type": "float"
+    },
+    "oldbid": {
+      "type": "float"
+    },
+    "oldask": {
+      "type": "float"
+    },
+    "pips": {
+      "type": "float"
+    }
+  }
+}
