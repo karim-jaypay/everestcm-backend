@@ -24,7 +24,11 @@ module.exports = {
             'XAUUSD',
             'XAGUSD',
             'XPTUSD',
-            'XPDUSD'
+            'XPDUSD',
+            'XBRUSD',
+            'XTIUSD',
+            'AUS200',
+            'UK100'
         ]
 
         // for every quote title run api
@@ -377,7 +381,7 @@ module.exports = {
             }
         }
 
-        // for every forex quote title run api
+        // for every indices quote title run api
         for( let i = 0; i < indice_titles.length; i++) {
 
             const title = indice_titles[i]
