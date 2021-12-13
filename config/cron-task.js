@@ -77,7 +77,7 @@ module.exports = {
     },
 
     // get everestcm trade cards and forex, metal categories live data
-    '*/3 * * * * *': async ({ strapi }) => {
+    '*/5 * * * * *': async ({ strapi }) => {
 
         // default trade cards quotes
         const trade_titles = ['EURUSD', 'USDJPY', 'GBPUSD', 'XAUUSD']
