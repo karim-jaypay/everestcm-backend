@@ -29,6 +29,15 @@
     },
     "pips": {
       "type": "float"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

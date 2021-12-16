@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_title_image_title_images",
+  "info": {
+    "displayName": "titleImage",
+    "icon": "arrow-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

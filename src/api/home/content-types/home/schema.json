@@ -10,35 +10,64 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "HomeSlider": {
       "displayName": "HomeSlider",
       "type": "component",
       "repeatable": true,
-      "component": "home-slider.home-slider"
+      "component": "home-slider.home-slider",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "second": {
       "displayName": "titleandsub",
       "type": "component",
       "repeatable": false,
-      "component": "titleandsub.titleandsub"
+      "component": "titleandsub.titleandsub",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "third": {
       "type": "component",
       "repeatable": false,
-      "component": "titleandsub.titleandsub"
+      "component": "titleandsub.titleandsub",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "third_card": {
       "displayName": "card",
       "type": "component",
       "repeatable": true,
-      "component": "card.card"
+      "component": "card.card",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "fourth": {
       "type": "component",
       "repeatable": false,
-      "component": "titleandsub.titleandsub"
+      "component": "titleandsub.titleandsub",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "fourth_image": {
       "type": "media",
@@ -48,21 +77,41 @@
         "images",
         "files",
         "videos"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "fourth_card": {
       "displayName": "card_plus",
       "type": "component",
       "repeatable": true,
-      "component": "card-plus.card-plus"
+      "component": "card-plus.card-plus",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "fifth": {
       "type": "component",
       "repeatable": false,
-      "component": "titleandsub.titleandsub"
+      "component": "titleandsub.titleandsub",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "fifth_title": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "fifth_image": {
       "type": "media",
@@ -72,22 +121,42 @@
         "images",
         "files",
         "videos"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "sixth": {
       "type": "component",
       "repeatable": false,
-      "component": "titleandsub.titleandsub"
+      "component": "titleandsub.titleandsub",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "sixth_card": {
       "type": "component",
       "repeatable": true,
-      "component": "card.card"
+      "component": "card.card",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seventh": {
       "type": "component",
       "repeatable": false,
-      "component": "titleandsub.titleandsub"
+      "component": "titleandsub.titleandsub",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "background": {
       "type": "media",
@@ -97,7 +166,12 @@
         "images",
         "files",
         "videos"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "seventh_image": {
       "type": "media",
@@ -107,13 +181,23 @@
         "images",
         "files",
         "videos"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "pay_icon": {
       "displayName": "icon",
       "type": "component",
       "repeatable": true,
-      "component": "icon.icon"
+      "component": "icon.icon",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

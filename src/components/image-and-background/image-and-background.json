@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_image_and_background_image_and_backgrounds",
+  "info": {
+    "displayName": "imageAndBackground",
+    "icon": "arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "background": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

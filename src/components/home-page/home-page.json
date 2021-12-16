@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_page_home_pages",
+  "info": {
+    "displayName": "HomePage",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "second": {
+      "type": "component",
+      "repeatable": false,
+      "component": "titleandsub.titleandsub"
+    }
+  }
+}
